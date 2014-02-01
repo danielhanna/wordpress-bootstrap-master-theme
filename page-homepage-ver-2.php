@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Homepage
+Template Name: Homepage v2
 */
 ?>
 
@@ -34,7 +34,8 @@ Template Name: Homepage
 						<section class="row post_content">
 						
 							<div class="col-sm-8">
-						
+						        // Add Image Carousel - Daniel 
+						        <?php echo do_shortcode('[image-carousel]'); ?>
 								<?php the_content(); ?>
 								
 							</div>

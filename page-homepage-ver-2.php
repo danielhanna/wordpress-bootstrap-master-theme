@@ -69,7 +69,8 @@ echo $queried_post->post_content;
          </p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <?php $post_id = 1; echo get_the_post_thumbnail($post_id); ?>
+          
         </div>
       </div>
 
@@ -77,7 +78,7 @@ echo $queried_post->post_content;
 
       <div class="row featurette">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+         <?php $post_id = 30; echo get_the_post_thumbnail($post_id); ?>
         </div>
         <div class="col-md-7">
           <h2 class="featurette-heading"><?php echo get_the_title(30); ?></span></h2>
@@ -103,17 +104,17 @@ echo $queried_post->post_content;
           <p class="lead">
           
             <?php
-$post_id = 42;
-$queried_post = get_post($post_id);
-$title = $queried_post->post_title;
-//echo $title;
-echo $queried_post->post_content;
-?>
+			$post_id = 42;
+			$queried_post = get_post($post_id);
+			$title = $queried_post->post_title;
+			//echo $title;
+			echo $queried_post->post_content;
+			?>
           
           </p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <?php $post_id = 42; echo get_the_post_thumbnail($post_id); ?>
         </div>
       </div>
 

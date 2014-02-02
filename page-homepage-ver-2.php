@@ -45,14 +45,28 @@ Template Name: Homepage
 													
 						</section> <!-- end article header -->
 						 
+					
+						 
 						 <!-- START THE FEATURETTES -->
+			
+ <hr class="featurette-divider">
 
-      <hr class="featurette-divider">
+
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading"><?php echo get_the_title(1); ?>  </h2>
+          <p class="lead">
+          
+          <?php
+$post_id = 1;
+$queried_post = get_post($post_id);
+$title = $queried_post->post_title;
+
+echo $queried_post->post_content;
+?>
+          
+         </p>
         </div>
         <div class="col-md-5">
           <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
@@ -66,8 +80,18 @@ Template Name: Homepage
           <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
         </div>
         <div class="col-md-7">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading"><?php echo get_the_title(30); ?></span></h2>
+          <p class="lead">
+          
+            <?php
+$post_id = 30;
+$queried_post = get_post($post_id);
+$title = $queried_post->post_title;
+//echo $title;
+echo $queried_post->post_content;
+?>
+          
+          </p>
         </div>
       </div>
 
@@ -75,8 +99,18 @@ Template Name: Homepage
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading"><?php echo get_the_title(42); ?></h2>
+          <p class="lead">
+          
+            <?php
+$post_id = 42;
+$queried_post = get_post($post_id);
+$title = $queried_post->post_title;
+//echo $title;
+echo $queried_post->post_content;
+?>
+          
+          </p>
         </div>
         <div class="col-md-5">
           <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">

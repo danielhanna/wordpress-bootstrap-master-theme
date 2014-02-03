@@ -69,8 +69,10 @@ echo $queried_post->post_content;
          </p>
         </div>
         <div class="col-md-5">
-          <?php $post_id = 1; echo get_the_post_thumbnail($post_id); ?>
-          
+        
+        <?php $post_id = 1; echo get_the_post_thumbnail($post_id, 'full', array('class' => 'featurette-image img-responsive')); ?>
+         
+                    
         </div>
       </div>
 
@@ -78,7 +80,7 @@ echo $queried_post->post_content;
 
       <div class="row featurette">
         <div class="col-md-5">
-         <?php $post_id = 30; echo get_the_post_thumbnail($post_id); ?>
+         <?php $post_id = 30; echo get_the_post_thumbnail($post_id, 'full', array('class' => 'featurette-image img-responsive')); ?>
         </div>
         <div class="col-md-7">
           <h2 class="featurette-heading"><?php echo get_the_title(30); ?></span></h2>
@@ -114,7 +116,7 @@ echo $queried_post->post_content;
           </p>
         </div>
         <div class="col-md-5">
-          <?php $post_id = 42; echo get_the_post_thumbnail($post_id); ?>
+          <?php $post_id = 42; echo get_the_post_thumbnail($post_id, 'full', array('class' => 'featurette-image img-responsive')); ?>
         </div>
       </div>
 

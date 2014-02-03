@@ -26,6 +26,8 @@
 
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
+		<link rel='stylesheet'  href='http://localhost/~dev/swiftkickmedia.com/wp-content/themes/wordpress-bootstrap-master/library/css/style-overides.css' type='text/css' media='all' />
+		
 		<!-- end of wordpress head -->
 				
 	</head>

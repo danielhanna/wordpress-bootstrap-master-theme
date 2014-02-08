@@ -12,22 +12,27 @@ Template Name: Homepage Template
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
-									
+					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+					
 						<header>
 
 							<?php 
 								$post_thumbnail_id = get_post_thumbnail_id();
 								$featured_src = wp_get_attachment_image_src( $post_thumbnail_id, 'wpbs-featured-home' );
 							?>
-							
-						
+
+							<!--  // Add Image Carousel - Daniel -->
+						        <?php echo do_action('insert_bootstrapslider');  ?>
+							 
 				
+								<div class="page-header">
+									<h1><?php bloginfo('title'); ?><small><?php echo get_post_meta($post->ID, 'custom_tagline' , true);?></small></h1>
+								</div>				
+								
 							</div>
 						
 						</header>
-						<!--  // Add Image Carousel - Daniel -->
-						    <?php echo do_action('insert_bootstrapslider');  ?>
-						 
+						
 						<!--<section class="row post_content">
 						
 							<div class="col-sm-8">
@@ -41,9 +46,7 @@ Template Name: Homepage Template
 						</section> <!-- end article header --*>-->
 						 
 					
-						
-									
-						 	<h1>Heading 1</h1>
+						 
 						 <!-- START THE FEATURETTES -->
 			
 <!-- <hr class="featurette-divider">-->

@@ -44,6 +44,10 @@ Template Name: Homepage Template
 						
 									
 						 	<h1>Heading 1</h1>
+						 	<?php the_content(); ?>
+						 
+						 	
+						 	
 						 <!-- START THE FEATURETTES -->
 			
 <!-- <hr class="featurette-divider">-->

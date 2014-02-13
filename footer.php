@@ -1,4 +1,4 @@
-			<footer role="contentinfo">
+			<footer role="contentinfo" class="col-sm-12 clearfix">
 			
 				<div id="inner-footer" class="clearfix">
 		          <hr />
@@ -13,11 +13,17 @@
 					
 					<nav class="clearfix">
 						<?php wp_bootstrap_footer_links(); // Adjust using Menus in Wordpress Admin ?>
+						
+						<p class="copyright">&copy; <?php bloginfo('name'); ?></p>
+						
 					</nav>
 					
-					<p class="pull-right"><a href="http://320press.com" id="credit320" title="By the dudes of 320press">320press</a></p>
-			
-					<p class="attribution">&copy; <?php bloginfo('name'); ?></p>
+																	
+					
+					<!--<p class="pull-right"><a href="http://320press.com" id="credit320" title="By the dudes of 320press">320press</a></p>-->
+		<!--	<div id="main" class="col-sm-12 clearfix" role="main">
+			-->
+					
 				
 				</div> <!-- end #inner-footer -->
 				

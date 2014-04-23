@@ -79,7 +79,7 @@ p {
 	display: block;
 	float: left;
 	clear: both;
-	background: url(http://localhost/~dev/swiftkickmedia.com/images/Swift-Kick-Media-Logo-100.png);
+	
 }
 
 .navbar-brand {
@@ -88,7 +88,7 @@ p {
 	padding-right: 15px;
 	padding-left: 15px;
 	line-height: 20px;
-	background: url(http://localhost/~dev/swiftkickmedia.com/images/Swift-Kick-Media-Logo-70.png) no-repeat;
+	background: url(http://www.swiftkickmedia.com/images/Swift-Kick-Media-Logo-70.png) no-repeat;
 	width: 300px;
 	height: 90px;
 	margin-top: 15px;

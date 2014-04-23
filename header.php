@@ -26,7 +26,7 @@
 
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
-		<link rel='stylesheet'  href='http://localhost/~dev/swiftkickmedia.com/wp-content/themes/wordpress-bootstrap-master/library/css/style-overides.css' type='text/css' media='all' />
+		<link rel='stylesheet'  href='http://www.swiftkickmedia.com/wp-content/themes/wordpress-bootstrap-master/library/css/style-overides.css' type='text/css' media='all' />
 		
 		<!-- end of wordpress head -->
 				
@@ -52,13 +52,13 @@
 					<div class="collapse navbar-collapse navbar-responsive-collapse">
 						<?php wp_bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
 
-						<?php //if(of_get_option('search_bar', '1')) {?>
+						<!-- //<?php //if(of_get_option('search_bar', '1')) {?>
 						<form class="navbar-form navbar-right" role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
 							<div class="form-group">
 								<input name="s" id="s" type="text" class="search-query form-control" autocomplete="off" placeholder="<?php _e('Search','wpbootstrap'); ?>" data-provide="typeahead" data-items="4" data-source='<?php echo $typeahead_data; ?>'>
 							</div>
 						</form>
-						<?php //} ?>
+						//<?php //} ?>-->
 					</div>
 
 				</div> <!-- end .container -->

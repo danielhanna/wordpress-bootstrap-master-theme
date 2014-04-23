@@ -6066,7 +6066,7 @@ ul.nav .dropdown > .dropdown-menu .caret {
 }
 #main article {
   margin-bottom: 18px;
-  border-bottom: 1px solid #eeeeee;
+  /*border-bottom: 1px solid #eeeeee;*/
   padding: 0 0 9px;
 }
 #main article footer {

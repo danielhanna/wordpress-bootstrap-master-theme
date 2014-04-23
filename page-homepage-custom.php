@@ -43,7 +43,7 @@ Template Name: Homepage Template
 					
 						
 									
-						 	<h1>Heading 1</h1>
+						 	<!--<h1>Heading 1</h1>-->
 						 	<?php the_content(); ?>
 						 
 						 	
@@ -121,7 +121,7 @@ echo $queried_post->post_content;
         </div>
       </div>
 
-      <hr class="featurette-divider">
+      <!--<hr class="featurette-divider">-->
 
       <!-- /END THE FEATURETTES -->
       
